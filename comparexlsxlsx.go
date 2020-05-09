@@ -1,15 +1,16 @@
-package xls
+package main
 
 import (
 	"fmt"
 	"github.com/tealeg/xlsx"
 	"math"
 	"strconv"
+	"github.com/sergeilem/xls"
 )
 
 //Compares xls and xlsx files
 func CompareXlsXlsx(xlsfilepathname string, xlsxfilepathname string) string {
-	xlsFile, err := Open(xlsfilepathname, "utf-8")
+	xlsFile, err := xls.Open(xlsfilepathname, "utf-8")
 	if err != nil {
 		return fmt.Sprintf("Cant open xls file: %s", err)
 	}

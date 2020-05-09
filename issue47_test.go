@@ -1,4 +1,4 @@
-package xls
+package main
 
 import (
 	"io/ioutil"
